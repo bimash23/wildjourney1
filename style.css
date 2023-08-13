@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Comic+Neue:wght@300;400;700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    /*smooth scroll*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+
+}
+/*header section*/
+.header {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    padding: 50px 90px;
+    box-sizing: border-box;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Comic Neue', cursive;
+}
+
+nav .logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+nav .logo h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #F9F8F6;
+}
+nav button {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    background-color: #F9F8F6;
+    padding: 10px 50px;
+    border-radius: 50px;
+    transition:.4s ease-in-out;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #D6AC3C;
+    color:#F9F8F6;
+}
+
+
+    /*hero-section*/
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(0deg, rgba(194, 132, 49, 0.3), rgba(209, 145, 63, 0.3)), url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*background-blend-mode: overlay;*/
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.hero-section h1 {
+   font-size: 52px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    margin-bottom: 30px;
+   color: #F9F8F6;
+}
+
+.hero-section p {
+    font-family: 'Averia Serif Libre', cursive;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #F9F8F6;
+}
+
+.hero-section button {
+    font-family: 'Comic Neue', cursive;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+
+}
+.hero-section button:hover {
+    color: #D6AC3C;
+}
+.hero-section  .btn {
+    position: relative;
+    padding-bottom:10px;
+}
+
+/*highlight animation on hover*/
+.hero-section  .btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.10rem;
+    background:#F9F8F6;
+    left:0;
+   bottom: 0;
+    transform: scale(0,1);
+    transform-origin: 0% 100%;
+    transition:  0.4s ease;
+
+}
+.hero-section  .btn:hover::after {
+    transform: scale(1,1);
+    background:#D6AC3C;
+}
+/*highlight animation on hover*/
+
+    /*offering section */
+.offering {
+    padding: 80px 0px;
+    background-color: #F9F8F6;
+
+
+}
+.offering .top-heading {
+    width: 48%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 25px;
+    font-weight:400;
+    line-height: 32px;
+    color: #434141;
+    margin-bottom: 30px;
+}
+.offering .divider {
+    margin: auto;
+    width: 55px;
+    height: 2px;
+    background: #C39152;
+    margin-bottom: 100px;
+}
+
+.offering-card {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+
+}
+/*col-1*/
+.offering-card .col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.offering-card .col-1 .experience {
+    text-align: center;
+
+
+}
+.offering-card .col-1 .experience h5 {
+    text-transform: uppercase;
+    font-family: 'Averia Serif Libre', cursive;
+    letter-spacing: 1px;
+    font-size:18px;
+    color: #BA9F5F;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.offering-card .col-1 .experience p{
+    font-family: 'Averia Serif Libre', cursive;
+    width: 43%;
+    margin: auto;
+    line-height: 25px;
+    font-size:17px;
+    color: #959292;
+}
+
+.offering-card .col-1 .moments {
+    text-align: center;
+
+}
+.offering-card .col-1 .moments h5 {
+    text-transform: uppercase;
+    font-family: 'Averia Serif Libre', cursive;
+    letter-spacing: 1px;
+    font-size:18px;
+    color: #BA9F5F;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.offering-card .col-1 .moments p{
+    font-family: 'Averia Serif Libre', cursive;
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    font-size:17px;
+    color: #959292;
+}
+
+/*col-2*/
+.offering-card .col-2 {
+    margin-left:50px;
+}
+
+.offering-card .col-2 img {
+    width: 250px;
+}
+
+
+
+
+
+/*col-3*/
+.offering-card .col-3 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.offering-card .col-3 .guided-meditations {
+    text-align: center;
+}
+
+.offering-card .col-3 .guided-meditations h5 {
+    text-transform: uppercase;
+    font-family: 'Averia Serif Libre', cursive;
+    letter-spacing: 1px;
+    font-size:18px;
+    color: #BA9F5F;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.offering-card .col-3 .guided-meditations p{
+    font-family: 'Averia Serif Libre', cursive;
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    font-size:17px;
+    color: #959292;
+}
+
+.offering-card .col-3 .dynamic-landscapes {
+    text-align: center;
+}
+
+.offering-card .col-3 .dynamic-landscapes h5 {
+    text-transform: uppercase;
+    font-family: 'Averia Serif Libre', cursive;
+    letter-spacing: 1px;
+    font-size:18px;
+    color: #BA9F5F;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.offering-card .col-3 .dynamic-landscapes p{
+    font-family: 'Averia Serif Libre', cursive;
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    font-size:17px;
+    color: #959292;
+}
+/*offering section */
+
+
+/*routine section starts*/
+.routine-section {
+    padding: 0 90px;
+    background:linear-gradient(0deg, rgb(195, 145, 83), rgba(195, 145, 83, 0.67)), url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.working-days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #111;
+    padding:20px 0 10px 0;
+    width:50%;
+    margin: auto;
+}
+
+/*six days*/
+.working-days .six-days {
+    background: url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:95%;
+    text-align: center;
+    padding: 40px 0;
+    height: 220px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-bottom: 20px;
+    transition: .7s ease-in-out;
+}
+.working-days .six-days:hover {
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.working-days .six-days p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+}
+.working-days .six-days h5{
+    text-transform: uppercase;
+    font-size: 2.08vw;
+    letter-spacing: 0.93vw;
+}
+.working-days .six-days p:nth-child(3){
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+/*five-days*/
+.working-days .five-days {
+    /*background:linear-gradient(0deg, rgb(20, 19, 19), rgba(11, 11, 11, 0.11)), url(images/moon-trees-wallpaper-preview.jpg);*/
+    background: url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+   background-attachment: fixed;
+    width:95%;
+    text-align: center;
+    padding: 40px 0;
+    height: 270px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-bottom: 20px;
+    transition: .7s ease-in-out;
+}
+.working-days .five-days:hover {
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*background-position: center;*/
+}
+
+.working-days .five-days p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.working-days .five-days h5{
+    text-transform: uppercase;
+    font-size: 2.08vw;
+    letter-spacing: 0.93vw;
+    margin-bottom: 10px;
+}
+.working-days .five-days p:nth-child(3){
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/*seven-days*/
+.working-days .seven-days {
+    /*background: url(images/nature-vector-firewatch-artwork-wallpaper-preview.jpg);*/
+    background: url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:95%;
+    text-align: center;
+    padding: 40px 0;
+    height: 270px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-bottom: 20px;
+    transition: .7s ease-in-out;
+}
+.working-days .seven-days:hover {
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-position: center;*/
+}
+
+.working-days .seven-days p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.working-days .seven-days h5{
+    text-transform: uppercase;
+    font-size: 2.08vw;
+    letter-spacing: 0.93vw;
+    margin-bottom: 10px;
+}
+.working-days .seven-days p:nth-child(3){
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/*five days-second category*/
+.working-days .five-days:nth-child(4) {
+    /*background:linear-gradient(0deg, rgb(20, 19, 19), rgba(11, 11, 11, 0.11)), url(images/istockphoto-867902780-612x612.jpg);*/
+    background: url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:95%;
+    text-align: center;
+    padding: 40px 0;
+    height: 270px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Averia Serif Libre', cursive;
+    transition: .7s ease-in-out;
+}
+.working-days .five-days:nth-child(4):hover {
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-position: center;*/
+}
+.working-days .five-days:nth-child(4) p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.working-days .five-days:nth-child(4) h5{
+    text-transform: uppercase;
+    font-size: 2.08vw;
+    letter-spacing: 0.93vw;
+    margin-bottom: 10px;
+}
+.working-days .five-days:nth-child(4) p:nth-child(3){
+    font-size: 25px;
+    font-weight: 400;
+}
+/*routine section ends*/
+
+/*second offering section*/
+.second-offering {
+    padding: 80px 90px;
+    background-color: #F9F8F6;
+
+
+}
+.second-offering .top-heading {
+    text-align: center;
+    margin: auto;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 25px;
+    font-weight:400;
+    line-height: 32px;
+    color: #434141;
+    margin-bottom: 30px;
+}
+.second-offering .divider {
+    margin: auto;
+    width: 55px;
+    height: 2px;
+    background: #C39152;
+    margin-bottom: 100px;
+}
+
+.second-offering .second-heading {
+    width: 49%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 20px;
+    font-weight:400;
+    line-height: 32px;
+    color: #434141;
+    margin-bottom: 30px;
+}
+/*second offering section*/
+
+
+/*audio-play-section*/
+.audio-play {
+    padding: 0 90px;
+    background:linear-gradient(0deg, rgba(226, 226, 226, 0.17), rgba(224, 224, 224, 0.49)), url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-snap-align: center !important;
+
+}
+
+.audio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F8F6;
+    padding:20px 0 10px 0;
+    /*width:40%;*/
+    width: 36vw;
+    margin: auto;
+    border-radius: 10px;
+
+
+}
+.audio-content .day-three {
+    background: url(images/6229893.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /*width:90%;*/
+    width: 32.2vw;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Averia Serif Libre', cursive;
+    /*margin-bottom: 20px;*/
+    margin-bottom: 1.2vw;
+    /*height: 80vh;*/
+}
+
+.audio-content .day-three p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.audio-content .day-three  h5{
+    text-transform: uppercase;
+    font-size: 2.08vw;
+    letter-spacing: 5px;
+    width:80%;
+    margin:auto;
+    margin-bottom:15px;
+}
+.audio-content .day-three  p:nth-child(3){
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 7.81vw;
+
+}
+.audio-content .day-three .audio-control {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*.audio-control  button {*/
+/*    background-color: transparent;*/
+/*    border: none;*/
+/*}*/
+
+.audio-content .day-three .audio-control audio{
+    dislay:none;
+}
+
+/*.audio-content .day-three .audio-control i {*/
+/*    border:0.80vw solid rgba(224, 224, 224, 0.48);*/
+/*    width:13vw;*/
+/*    font-size:4.1vw;*/
+/*    padding:3.75vw 0;*/
+/*    border-radius: 50%;*/
+/*    margin: auto;*/
+/*    margin-bottom:2.60vw;*/
+/*    cursor: pointer;*/
+/*    color: #F9F8F6;*/
+/*}*/
+
+
+/*#pause-btn i{*/
+/*    color: rgba(249, 248, 246, 0.42);*/
+/*}*/
+
+
+.audio-content .day-three .audio-control .music-btn {
+    border: 0.80vw solid rgba(224, 224, 224, 0.48);
+    width: 15vw;
+    height: 15vw;
+    font-size: 4.1vw;
+    padding: 3.75vw 1.5vw 3.75vw 2.5vw;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 2.60vw;
+    cursor: pointer;
+    color: #F9F8F6;
+    position: relative;
+}
+
+/* main code */
+
+.play-pause-btn {
+    position: absolute;
+    top: 4.02vw;
+    left: 4.97vw;
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 5.41vw;
+    border-color: transparent transparent transparent #F9F8F6;
+    transition: 300ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2.70vw 0  2.70vw 4.39vw;
+
+}
+
+.play-pause-btn.paused {
+
+    border-style: double;
+    border-width: 0px 0 0px 3.66vw;
+    border-color: rgba(249, 248, 246, 0.42);
+
+
+}
+
+.play-pause-btn:hover {
+    border-color: transparent transparent transparent #c7c4c4;
+}
+/* main code */
+
+
+
+
+
+
+
+
+.audio-content .day-three .audio-control time {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1.56vw;
+}
+
+/*Moments section*/
+.moments-section {
+    padding: 80px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F9F8F6;
+}
+
+.moments-section .content {
+    width: 25vw;
+
+}
+
+.moments-section .content h5 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 48px;
+    margin-bottom: 0.50vw;
+}
+
+.moments-section .content p {
+    font-size: 20px;
+    line-height: 28.8px;
+    color: #686666;
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: 700;
+}
+
+.moments-section .image  {
+    position: relative;
+}
+
+.moments-section .image img {
+    filter: contrast(75%);
+}
+
+.moments-section .image::before {
+    content: 'For the next minute focus on';
+    font-family: 'Averia Serif Libre', cursive;
+    position: absolute;
+    top: 219px;
+    left: 33px;
+    right: 0;
+    z-index: 999;
+    font-size: 17.29px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.moments-section .image::after {
+    content: "How Far You've Come";
+    font-family: 'Averia Serif Libre', cursive;
+    position: absolute;
+
+    top: 280px;
+    left: 2px;
+    right: 0;
+    z-index: 999;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*Moments section*/
+
+/*nature image section*/
+.nature-image {
+    padding: 0 90px;
+    background:linear-gradient(0deg, rgba(226, 226, 226, 0.43), rgba(224, 224, 224, 0.36)), url(images/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-snap-align: center !important;
+
+}
+
+.nature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F8F6;
+    padding:20px 0 10px 0;
+    /*width:40%;*/
+    width: 36vw;
+    margin: auto;
+    border-radius: 10px;
+
+
+}
+.nature-content .image {
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /*width:90%;*/
+    width: 32.2vw;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 5px;
+    color: #fff;
+
+    /*margin-bottom: 20px;*/
+    margin-bottom: 1.2vw;
+    height: 42vw;
+
+
+}
+
+.nature-content .image img {
+    width:20vw;
+}
+/*nature image section*/
+
+/*Download section*/
+.download {
+    background-color: #F9F8F6;
+    padding: 80px 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.download .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download .content img:nth-child(1)  {
+    width:200px;
+    border-radius: 50px;
+
+}
+
+
+.download .content p:nth-child(2) {
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 3.4px;
+    color: #d4aa70;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    line-height: 50px;
+
+}
+
+.download .content p:nth-child(3) {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(17, 17, 17, 0.8);
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.download .content img:nth-child(4)  {
+    width:150px;
+}
+.download .image img {
+    width: 333px;
+}
+/*Download section*/
+
+/*Press kit section*/
+.press-kit-section {
+    padding: 80px 90px;
+    background-color: #F9F8F6;
+}
+
+.press-kit-section .press-kit {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.press-kit-section .press-kit p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 18px;
+    color: rgba(17, 17, 17, 0.68);
+    margin-bottom: 10px;
+}
+
+.press-kit-section .press-kit h5 {
+    font-size: 20px;
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: 500;
+    color: rgba(17, 17, 17, 0.94);
+    margin-bottom: 20px;
+}
+
+.press-kit-section .press-kit .divider {
+    width:65px;
+    height:2px;
+    border-radius: 10px;
+    background: #D6AC3C;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.press-kit-section .press-kit button {
+    width: 150px;
+    margin: auto;
+    background: none;
+    border: none;
+    background-color: #D6AC3C;
+    color: #F9F8F6;
+    font-family: 'Comic Neue', cursive;
+    font-size:18px;
+    padding:8px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid  #D6AC3C;
+    transition: .4s ease-in-out;
+}
+
+.press-kit-section .press-kit button:hover {
+    border: 2px solid  #D6AC3C;
+    background-color: transparent;
+    color: #D6AC3C;
+}
+/*Press kit section*/
+
+/*Footer section*/
+.footer-section {
+    padding: 80px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section .left-content h5 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size:18px;
+    text-transform: uppercase;
+    color: rgba(17, 17, 17, 0.84);
+
+}
+.footer-section .left-content p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size:14px;
+    color: rgba(17, 17, 17, 0.32);
+}
+
+.footer-section .left-content p span {
+    cursor: pointer;
+    color: #282828;
+    transition: .4s ease-in-out;
+}
+.footer-section .left-content p span:hover {
+    cursor: pointer;
+    color:  #D6AC3C;
+}
+
+
+.footer-section .right-content ul {
+    display: flex;
+}
+
+.footer-section .right-content ul li {
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.47);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+
+}
+
+.footer-section .right-content ul li:hover {
+    color: #D6AC3C;
+}
+/*Footer section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
