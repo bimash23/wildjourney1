@@ -83,7 +83,7 @@ nav button:hover {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background:linear-gradient(0deg, rgba(194, 132, 49, 0.3), rgba(209, 145, 63, 0.3)), url(images/6229893.jpg);
+    background:linear-gradient(0deg, rgba(194, 132, 49, 0.3), rgba(209, 145, 63, 0.3)), url(6229893.jpg);
     background-size: cover;
     background-position: center;
 
@@ -309,7 +309,7 @@ nav button:hover {
 /*routine section starts*/
 .routine-section {
     padding: 0 90px;
-    background:linear-gradient(0deg, rgb(195, 145, 83), rgba(195, 145, 83, 0.67)), url(images/6229893.jpg);
+    background:linear-gradient(0deg, rgb(195, 145, 83), rgba(195, 145, 83, 0.67)), url(6229893.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -328,7 +328,7 @@ nav button:hover {
 
 /*six days*/
 .working-days .six-days {
-    background: url(images/6229893.jpg);
+    background: url(6229893.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -343,7 +343,7 @@ nav button:hover {
     transition: .7s ease-in-out;
 }
 .working-days .six-days:hover {
-    background: url(images/mountain.jpg);
+    background: url(mountain.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -369,7 +369,7 @@ nav button:hover {
 /*five-days*/
 .working-days .five-days {
     /*background:linear-gradient(0deg, rgb(20, 19, 19), rgba(11, 11, 11, 0.11)), url(images/moon-trees-wallpaper-preview.jpg);*/
-    background: url(images/6229893.jpg);
+    background: url(6229893.jpg);
     background-size: cover;
     background-position: center;
    background-attachment: fixed;
@@ -384,7 +384,7 @@ nav button:hover {
     transition: .7s ease-in-out;
 }
 .working-days .five-days:hover {
-    background: url(images/mountain.jpg);
+    background: url(mountain.jpg);
     background-size: cover;
     background-attachment: fixed;
 
@@ -411,7 +411,7 @@ nav button:hover {
 /*seven-days*/
 .working-days .seven-days {
     /*background: url(images/nature-vector-firewatch-artwork-wallpaper-preview.jpg);*/
-    background: url(images/6229893.jpg);
+    background: url(6229893.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -426,7 +426,7 @@ nav button:hover {
     transition: .7s ease-in-out;
 }
 .working-days .seven-days:hover {
-    background: url(images/mountain.jpg);
+    background: url(mountain.jpg);
     background-size: cover;
     background-attachment: fixed;
     /*background-position: center;*/
@@ -452,7 +452,7 @@ nav button:hover {
 /*five days-second category*/
 .working-days .five-days:nth-child(4) {
     /*background:linear-gradient(0deg, rgb(20, 19, 19), rgba(11, 11, 11, 0.11)), url(images/istockphoto-867902780-612x612.jpg);*/
-    background: url(images/6229893.jpg);
+    background: url(6229893.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -466,7 +466,7 @@ nav button:hover {
     transition: .7s ease-in-out;
 }
 .working-days .five-days:nth-child(4):hover {
-    background: url(images/mountain.jpg);
+    background: url(mountain.jpg);
     background-size: cover;
     background-attachment: fixed;
     /*background-position: center;*/
@@ -531,7 +531,7 @@ nav button:hover {
 /*audio-play-section*/
 .audio-play {
     padding: 0 90px;
-    background:linear-gradient(0deg, rgba(226, 226, 226, 0.17), rgba(224, 224, 224, 0.49)), url(images/6229893.jpg);
+    background:linear-gradient(0deg, rgba(226, 226, 226, 0.17), rgba(224, 224, 224, 0.49)), url(6229893.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -553,7 +553,7 @@ nav button:hover {
 
 }
 .audio-content .day-three {
-    background: url(images/6229893.jpg);
+    background: url(6229893.jpg);
     background-size: cover;
     background-position: center;
 
@@ -751,7 +751,7 @@ nav button:hover {
 /*nature image section*/
 .nature-image {
     padding: 0 90px;
-    background:linear-gradient(0deg, rgba(226, 226, 226, 0.43), rgba(224, 224, 224, 0.36)), url(images/mountain.jpg);
+    background:linear-gradient(0deg, rgba(226, 226, 226, 0.43), rgba(224, 224, 224, 0.36)), url(mountain.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -773,7 +773,7 @@ nav button:hover {
 
 }
 .nature-content .image {
-    background: url(images/mountain.jpg);
+    background: url(mountain.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
